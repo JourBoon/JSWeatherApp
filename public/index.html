@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../services/weather.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="container">
+          <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+          </div>
+        </div>
+      
+        <div class="card-header">
+          <span id="location">City</span>
+          <span>March 13</span>
+          <span id="temp">Météo</span>
+        </div>
+      
+        <span class="temp" id="meteo">?°C</span>
+      </div>
+
+      <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+            </g>
+        </svg>
+        <input placeholder="Search" value= "Paris" type="search" class="input" id="searchbar">
+    </div>
+
+    <button class="btn" onclick="makeRequest()">Appliquer</button>
+
+</body>
+</html>
