@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 
-let APIKey = "f0e453764bbb80bed07b24485f43c370"
+let APIKey = "yourapikey"
 
 function makeRequest(){
     var cityName = document.getElementById("searchbar").value;
